@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, rgba(7,29,81,1) 0%, rgba(0, 120, 120, 1) 100%);
+}
+
+@font-face{
+  font-family: SEGA;
+  src: url('./SEGA.TTF');
+}
+
+h1{
+  font-family: SEGA;
+  font-weight: 200;
+  color: rgb(136, 180, 136);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
