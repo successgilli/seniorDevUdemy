@@ -137,5 +137,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-regenerator": "^7.8.7",
+    "regenerator-runtime": "^0.13.5"
   }
 }

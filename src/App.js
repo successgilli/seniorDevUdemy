@@ -1,15 +1,41 @@
-import React, { useState } from 'react';
-import robotArray from './robots.js';
+import React, { useState, useEffect } from 'react';
+// import robotArray from './robots.js';
 
 import Card from './Card.js';
 import SearchBox from './SerchBox';
+import Scroll from './Scroll';
 
 import 'tachyons';
 
 const App = () => {
-  const [ robotvalues, setRobotArrayValues ] = useState(robotArray);
+  const [robotvalues, setRobotArrayValues] = useState({
+    initial: [],
+    current: []
+  });
 
-  const robots = robotvalues.map(({ name, email, id }) => (
+  const getRobots = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
+    const Jsonresp = await response.json();
+    return Jsonresp;
+  };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    const addRobotsToState = async () => {
+      const res = await getRobots();
+
+      setRobotArrayValues({
+        initial: res,
+        current: res
+      });
+    };
+
+    addRobotsToState();
+  }, []);
+
+  const { current, initial } = robotvalues;
+
+  const robots = current.map(({ name, email, id }) => (
     <Card
       name={name}
       email={email}
@@ -19,11 +45,14 @@ const App = () => {
   ));
 
   const searchChange = (value) => {
-    let filteredRobots = robotArray.filter(({ name }) => {
+    let filteredRobots = initial.filter(({ name }) => {
       return name.toLowerCase().includes(value.toLowerCase());
     });
 
-    setRobotArrayValues(filteredRobots);
+    setRobotArrayValues({
+      ...robotvalues,
+      current: filteredRobots
+    });
   };
 
   return (
@@ -32,9 +61,11 @@ const App = () => {
       <div>
         <SearchBox changeEvent={searchChange} />
       </div>
-      <div>
-        {robots}
-      </div>
+      <Scroll>
+        <div>
+          {(current.length) ? robots : <h3>Loading ...</h3>}
+        </div>
+      </Scroll>
     </div>
   );
 };
