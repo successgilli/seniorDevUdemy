@@ -1,0 +1,2 @@
+export const SEARCH_NAME = 'SEARCH_NAME';
+export const INITIATE_SEARCH = 'INITIATE_SEARCH';
