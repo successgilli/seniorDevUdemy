@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/seniorDevUdemy/static/css/main.83909ae8.chunk.css",
+    "main.js": "/seniorDevUdemy/static/js/main.883f04ee.chunk.js",
+    "main.js.map": "/seniorDevUdemy/static/js/main.883f04ee.chunk.js.map",
+    "runtime-main.js": "/seniorDevUdemy/static/js/runtime-main.d26a4f93.js",
+    "runtime-main.js.map": "/seniorDevUdemy/static/js/runtime-main.d26a4f93.js.map",
+    "static/js/2.1935e29a.chunk.js": "/seniorDevUdemy/static/js/2.1935e29a.chunk.js",
+    "static/js/2.1935e29a.chunk.js.map": "/seniorDevUdemy/static/js/2.1935e29a.chunk.js.map",
+    "static/css/3.3b6f1bda.chunk.css": "/seniorDevUdemy/static/css/3.3b6f1bda.chunk.css",
+    "static/js/3.8f71ff7f.chunk.js": "/seniorDevUdemy/static/js/3.8f71ff7f.chunk.js",
+    "static/js/3.8f71ff7f.chunk.js.map": "/seniorDevUdemy/static/js/3.8f71ff7f.chunk.js.map",
+    "static/js/4.c3dc44c2.chunk.js": "/seniorDevUdemy/static/js/4.c3dc44c2.chunk.js",
+    "static/js/4.c3dc44c2.chunk.js.map": "/seniorDevUdemy/static/js/4.c3dc44c2.chunk.js.map",
+    "index.html": "/seniorDevUdemy/index.html",
+    "precache-manifest.54228f181a7994988f2b21b0abac6800.js": "/seniorDevUdemy/precache-manifest.54228f181a7994988f2b21b0abac6800.js",
+    "service-worker.js": "/seniorDevUdemy/service-worker.js",
+    "static/css/3.3b6f1bda.chunk.css.map": "/seniorDevUdemy/static/css/3.3b6f1bda.chunk.css.map",
+    "static/css/main.83909ae8.chunk.css.map": "/seniorDevUdemy/static/css/main.83909ae8.chunk.css.map",
+    "static/js/2.1935e29a.chunk.js.LICENSE.txt": "/seniorDevUdemy/static/js/2.1935e29a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/seniorDevUdemy/static/media/SEGA.82e09f78.TTF"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d26a4f93.js",
+    "static/js/2.1935e29a.chunk.js",
+    "static/css/main.83909ae8.chunk.css",
+    "static/js/main.883f04ee.chunk.js"
+  ]
+}
